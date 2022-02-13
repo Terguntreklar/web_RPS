@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head> </head>
+<body>
+  <label for="bookName">Book name:</label>
+
+  <input required type="text" name="bookName" id="bkName" />
+  <label for="authorName">Author name:</label>
+
+  <input required type="text" name="authorName" id="authName" />
+  <label for="num">Number of pages:</label>
+
+  <input required type="number" name="num" id="bkNum" />
+  <label for="read">Read:</label>
+  <input required type="checkbox" name="read" id="readBtn" />
+  <input type="submit" value="add book" onclick="addBookToBooks()" />
+  <a href="#"></a>
+  <table id="dispTable">
+    <thead>
+      <tr>
+        <th>book number</th>
+        <th>book name</th>
+        <th>author name</th>
+        <th>number of books</th>
+        <th>Read status</th>
+        <th>delete</th>
+      </tr>
+    </thead>
+    <tbody id="tableBody">
+
+    </tbody>
+  </table>
+  <script src="index.js"></script>
+</body>
